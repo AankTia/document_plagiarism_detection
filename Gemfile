@@ -18,6 +18,8 @@ gem 'sprockets', '~> 2'
 
 gem 'eventmachine', '1.0.9.1'
 
+gem 'indonesian_stemmer'
+
 group :development do
   gem 'annotate',require: false
   gem 'spring'

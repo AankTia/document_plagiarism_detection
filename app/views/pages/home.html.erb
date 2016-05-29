@@ -1,0 +1,15 @@
+<%= form_tag("/get_similiarity", method: 'post', multipart: true) do %>
+  <%= label_tag(:document, "Dokumen:") %>
+  <%= file_field_tag :document %>
+  <br>
+
+  <%= label_tag(:comparator_document, "Dokumen Pembanding:") %>
+  <%= file_field_tag :comparator_document %>
+  <br>
+
+  <%= label_tag(:kgram_value, "K-Gram Value:") %>
+  <%= select_tag(:kgram_value, options_for_select([['1',1],['2',2],['3',3],['4',4],['5',5]])) %>
+  <br>
+
+  <%= submit_tag("Analize") %>
+<% end %>
